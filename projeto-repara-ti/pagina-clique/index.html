@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Repara.TI — Assistência Técnica</title>
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Fundo -->
+  <div class="bg-base"></div>
+  <div class="scanlines"></div>
+
+  <!-- Decoração: traços de circuito (canto esquerdo) -->
+  <svg class="trace-deco" viewBox="0 0 180 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M160 0 L160 80 L80 80 L80 180 L30 180" stroke="#3b8fff" stroke-width="1.4"/>
+    <path d="M140 0 L140 60 L60 60 L60 160 L10 160" stroke="#3b8fff" stroke-width="1"/>
+    <circle cx="80" cy="80" r="4" fill="#3b8fff"/>
+    <circle cx="60" cy="60" r="3" fill="#3b8fff"/>
+    <circle cx="30" cy="180" r="4" fill="#3b8fff"/>
+    <circle cx="10" cy="160" r="3" fill="#3b8fff"/>
+    <line x1="80" y1="180" x2="80" y2="260" stroke="#3b8fff" stroke-width="1"/>
+    <circle cx="80" cy="260" r="3" fill="#3b8fff"/>
+  </svg>
+
+  <!-- Decoração: chip (canto direito) -->
+  <svg class="chip-deco" viewBox="0 0 380 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="90" y="60" width="200" height="220" rx="16" stroke="#3b8fff" stroke-width="2"/>
+    <rect x="120" y="90" width="140" height="160" rx="8" stroke="#3b8fff" stroke-width="1.4"/>
+    <rect x="148" y="118" width="84" height="84" rx="6" fill="rgba(59,143,255,0.06)" stroke="#3b8fff" stroke-width="1.4"/>
+    <g stroke="#3b8fff" stroke-width="1.4">
+      <line x1="155" y1="60" x2="155" y2="22"/><circle cx="155" cy="20" r="3.5" fill="#3b8fff"/>
+      <line x1="178" y1="60" x2="178" y2="12"/><circle cx="178" cy="10" r="3" fill="#3b8fff"/>
+      <line x1="202" y1="60" x2="202" y2="22"/><circle cx="202" cy="20" r="3.5" fill="#3b8fff"/>
+      <line x1="225" y1="60" x2="225" y2="12"/><circle cx="225" cy="10" r="3" fill="#3b8fff"/>
+      <line x1="155" y1="280" x2="155" y2="318"/><circle cx="155" cy="320" r="3.5" fill="#3b8fff"/>
+      <line x1="178" y1="280" x2="178" y2="328"/><circle cx="178" cy="330" r="3" fill="#3b8fff"/>
+      <line x1="202" y1="280" x2="202" y2="318"/><circle cx="202" cy="320" r="3.5" fill="#3b8fff"/>
+      <line x1="225" y1="280" x2="225" y2="328"/><circle cx="225" cy="330" r="3" fill="#3b8fff"/>
+      <line x1="90" y1="120" x2="52" y2="120"/><circle cx="50" cy="120" r="3.5" fill="#3b8fff"/>
+      <line x1="90" y1="148" x2="40" y2="148"/><circle cx="38" cy="148" r="3" fill="#3b8fff"/>
+      <line x1="90" y1="192" x2="52" y2="192"/><circle cx="50" cy="192" r="3.5" fill="#3b8fff"/>
+      <line x1="90" y1="220" x2="40" y2="220"/><circle cx="38" cy="220" r="3" fill="#3b8fff"/>
+      <line x1="290" y1="120" x2="328" y2="120"/><circle cx="330" cy="120" r="3.5" fill="#3b8fff"/>
+      <line x1="290" y1="148" x2="340" y2="148"/><circle cx="342" cy="148" r="3" fill="#3b8fff"/>
+      <line x1="290" y1="192" x2="328" y2="192"/><circle cx="330" cy="192" r="3.5" fill="#3b8fff"/>
+      <line x1="290" y1="220" x2="340" y2="220"/><circle cx="342" cy="220" r="3" fill="#3b8fff"/>
+    </g>
+    <rect x="164" y="134" width="52" height="52" rx="4" fill="rgba(59,143,255,0.1)" stroke="rgba(59,143,255,0.5)" stroke-width="1"/>
+    <line x1="172" y1="160" x2="208" y2="160" stroke="rgba(59,143,255,0.5)" stroke-width="1"/>
+    <line x1="190" y1="142" x2="190" y2="178" stroke="rgba(59,143,255,0.5)" stroke-width="1"/>
+  </svg>
+
+  <!--
+    ╔══════════════════════════════════════════════════════╗
+    ║  MATHEUS — substitua COLOQUE-SEU-LINK-AQUI pela URL ║
+    ╚══════════════════════════════════════════════════════╝
+  -->
+  <a href="../site/index.html" style="position:fixed;inset:0;z-index:2" aria-label="Acessar o site Repara.TI"></a>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">
+      <span class="logo-repara">Repara</span><span class="logo-ti">.TI</span>
+    </div>
+    <div class="nav-badge"><span></span>Atendendo agora</div>
+  </nav>
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="hero-inner">
+
+      <div class="eyebrow">Assistência Técnica Especializada</div>
+
+      <h1>
+        Seu computador travou?
+        <em>A gente resolve.</em>
+      </h1>
+
+      <div class="divider"></div>
+
+      <p class="sub">
+        Diagnóstico rápido, orçamento sem enrolação e reparo feito
+        por quem entende do assunto — computadores, notebooks e muito mais.
+      </p>
+
+      <div class="btn-area">
+        <div class="btn-wrap">
+          <button class="btn" id="cta-btn">
+            <span class="btn-text">Resolva seu problema com um clique</span>
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none">
+              <path d="M5 12h14M13 6l6 6-6 6" stroke="white" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="trust">
+        <span class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/></svg>
+          Diagnóstico em até 24h
+        </span>
+        <span class="sep"></span>
+        <span class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 3l7 4v5c0 4-3 7-7 9-4-2-7-5-7-9V7l7-4z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          Garantia no serviço
+        </span>
+        <span class="sep"></span>
+        <span class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 2l2.8 5.8L21 9l-4.5 4 1.2 6.5L12 16.5 6.3 19.5 7.5 13 3 9l6.2-.2L12 2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          Sem taxa de diagnóstico
+        </span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
