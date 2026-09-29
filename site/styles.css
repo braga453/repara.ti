@@ -83,15 +83,14 @@
   }
   .btn-header-cta:hover{filter:brightness(1.08); transform:translateY(-1px);}
   .menu-toggle{display:none; border:1px solid var(--border); border-radius:var(--radius-sm); color:var(--text); padding:8px 10px;}
-  @keyframes camaleao {
+ @keyframes camaleao {
   0% { color: #3b82f6; }   /* Azul */
   33% { color: #8b5cf6; }  /* Roxo */
   66% { color: #ec4899; }  /* Rosa */
   100% { color: #3b82f6; } /* Volta ao Azul */
 }
 
-/* Aplica o efeito na parte .logo-ti (ou na classe correspondente ao ".TI") */
-.logo-ti {
+.lg2 {
   animation: camaleao 5s infinite linear;
 }
 
